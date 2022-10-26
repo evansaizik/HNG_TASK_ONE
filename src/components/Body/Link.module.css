@@ -1,0 +1,10 @@
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 100%;
+  height: 528px;
+  background-color: burlywood;
+}

@@ -1,12 +1,14 @@
 import React from "react";
 import classes from './Container.module.css';
+import Profile from "./Profile";
+import Link from "./Link";
 
 const Container = () => {
   return (
     <div className={classes.layout}>
       <div className={classes.container}>
-        <div className={classes.one}></div>
-        <div className={classes.two}></div>
+        <Profile />
+        <Link />
       </div>
     </div>
   )
