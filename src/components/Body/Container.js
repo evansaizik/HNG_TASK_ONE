@@ -3,6 +3,9 @@ import classes from './Container.module.css';
 import Profile from "./Profile";
 import Link from "./Link";
 import Social from "./Social";
+import Footer from "../Footer/Footer";
+// import share from '../../Assets/shareLogo.svg';
+
 
 const Container = () => {
   return (
@@ -11,6 +14,7 @@ const Container = () => {
         <Profile />
         <Link />
         <Social />
+        <Footer />
       </div>
     </div>
   )

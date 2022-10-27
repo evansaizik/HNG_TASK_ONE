@@ -3,7 +3,7 @@ import classes from './Social.module.css';
 import slack from '../../Assets/slack.svg';
 import github from '../../Assets/Icon.png';
 
-const Footer = () => {
+const Social = () => {
   return (
     <div className={classes.container}>
       <div>
@@ -14,4 +14,4 @@ const Footer = () => {
   )
 };
 
-export default Footer;
+export default Social;

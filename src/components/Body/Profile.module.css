@@ -7,6 +7,7 @@
   isolation: isolate;
   width: 100%;
   height: 140px;
+  position: relative;
 }
 
 .profile img {
@@ -15,6 +16,17 @@
   border-radius: 5rem;
 }
 
-.profile h1:nth-child(3) {
+.profile .img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0px;
+  top: -20px;
+  background: #fff;
+  border: 1px dashed #D0D5DD;
+  border-radius: 20px;
+}
+
+.profile h1:nth-child(4) {
   display: none;
 }
