@@ -2,6 +2,7 @@ import React from "react";
 import classes from './Container.module.css';
 import Profile from "./Profile";
 import Link from "./Link";
+import Social from "./Social";
 
 const Container = () => {
   return (
@@ -9,6 +10,7 @@ const Container = () => {
       <div className={classes.container}>
         <Profile />
         <Link />
+        <Social />
       </div>
     </div>
   )
