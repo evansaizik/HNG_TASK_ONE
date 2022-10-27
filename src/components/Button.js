@@ -3,11 +3,12 @@ import classes from './Button.module.css';
 
 const Button = (props) => {
   return (
-    <button 
+    <a 
       id={props.id}
+      href={props.href}
       className={classes.button} 
       >{props.children}
-    </button>
+    </a>
   )
 };
 
