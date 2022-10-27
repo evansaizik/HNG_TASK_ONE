@@ -16,7 +16,7 @@
   border-radius: 5rem;
 }
 
-.profile .img {
+.profile .img, .profile .img768 {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -27,6 +27,21 @@
   border-radius: 20px;
 }
 
+.profile .img768 {
+  display: none;
+}
+
 .profile h1:nth-child(4) {
   display: none;
+}
+
+@media screen and (min-width:768px) {
+  .profile .img768 {
+    display: block;
+    right: 15%;
+  }
+
+  .profile .img {
+    display: none;
+  }
 }

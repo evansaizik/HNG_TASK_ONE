@@ -9,7 +9,6 @@
   height: 196px;
   left: 0px;
   top: 892px;
-  /* background-color: bisque; */
 }
 
 .content {
@@ -21,5 +20,29 @@
   gap: 16px;
   width: 80%;
   height: 132px;
-  /* background-color: aqua; */
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0px;
+    gap: 64px;
+    position: absolute;
+    width: 1440px;
+    height: 160px;
+    left: 0px;
+    top: 998px;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px 0px;
+    gap: 32px;
+    width: 85%;
+    height: 64px;
+  }
 }
