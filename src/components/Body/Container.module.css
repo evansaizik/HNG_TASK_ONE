@@ -10,7 +10,6 @@
   height: 924px;
   left: 0px;
   top: 0px;
-  /* background-color: orange; */
   margin: auto;
 }
 
@@ -22,5 +21,4 @@
   gap: 32px;
   width: 80%;
   height: 700px;
-  background-color: aliceblue;
 }
