@@ -9,27 +9,27 @@ const Contact = () => {
     </header>
     <form>
       <div>
-        <label>First name</label>
-        <input></input>
+        <label htmlFor="first_name">First name</label>
+        <input id="first_name"/>
       </div>
       <div>
-        <label>Last name</label>
-        <input></input>
+        <label htmlFor="last_name">Last name</label>
+        <input id="last_name"/>
       </div>
       <div>
-        <label>Email</label>
-        <input></input>
+        <label htmlFor="email">Email</label>
+        <input id="email"/>
       </div>
       <div className={classes.text}>
-        <label>Message</label>
-        <textarea></textarea>
+        <label htmlFor="message">Message</label>
+        <textarea id="message"/>
       </div>
       <div className={classes.check}>
         <input id="checkbox" type="checkbox"/>
         <label htmlFor="checkbox">You agree to providing your data to Isaiah who may contact you</label>
       </div>
     </form>
-    <button type="submit">Send message</button>
+    <button id="btn__submit" type="submit">Send message</button>
   </div>
 };
 
