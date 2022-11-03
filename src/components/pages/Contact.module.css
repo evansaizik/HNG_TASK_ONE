@@ -52,7 +52,21 @@ form {
   height: 592px;
 }
 
-form div {
+form .name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0;
+  gap: 24px;
+  width: 91.4%;
+  height: 160px;
+}
+
+form .name .row {
+  width: 100%;
+}
+
+form .email, form .message {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -89,6 +103,7 @@ form div input {
 
 form .text {
   height: 158px;
+  width: 91.4%;
 }
 
 form div textarea {
@@ -103,6 +118,7 @@ form div textarea {
   border: 1px solid #D0D5DD;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 form .check {
@@ -155,7 +171,72 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 80%;
+  .header {
+    width: 720px;
+    height: 94px;
+  }
+
+  .header h1 {
+    width: 448px;
+    height: 44px;
+  }
+
+  .header p {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+
+  form {
+    align-items: flex-start;
+    gap: 32px;
+    width: 720px;
+    height: 474px;
+  }
+
+  form .name {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 720px;
+    height: 70px;
+  }
+
+  form .name .row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+    width: 348px;
+    height: 70px;
+  }
+
+  form .email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+    width: 720px;
+    height: 70px;
+  }
+
+  form .text {
+    height: 158px;
+    width: 720px;
+  }
+
+  form .check label {
+    padding: 0px;
+    gap: 2px;
+    width: 688px;
+    height: 24px;
+    font-size: 1.6rem;
+  }
+
+  button {
+    width: 720px;
   }
 }
