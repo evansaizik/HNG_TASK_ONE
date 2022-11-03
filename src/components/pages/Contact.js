@@ -17,11 +17,16 @@ const Contact = () => {
         <label>Email</label>
         <input></input>
       </div>
-      <div>
+      <div className={classes.text}>
         <label>Message</label>
         <textarea></textarea>
       </div>
+      <div className={classes.check}>
+        <input id="checkbox" type="checkbox"/>
+        <label htmlFor="checkbox">You agree to providing your data to Isaiah who may contact you</label>
+      </div>
     </form>
+    <button>Send message</button>
   </div>
 };
 
