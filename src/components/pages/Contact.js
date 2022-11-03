@@ -3,7 +3,10 @@ import classes from './Contact.module.css';
 
 const Contact = () => {
   return <div className={classes.layout}>
-    <header className={classes.header}></header>
+    <header className={classes.header}>
+      <h1>Contact Me</h1>
+      <p>Hi there, contact me to ask me about anything you have in mind.</p>
+    </header>
     <form>
       <div>
         <label>First name</label>
@@ -26,7 +29,7 @@ const Contact = () => {
         <label htmlFor="checkbox">You agree to providing your data to Isaiah who may contact you</label>
       </div>
     </form>
-    <button>Send message</button>
+    <button type="submit">Send message</button>
   </div>
 };
 
