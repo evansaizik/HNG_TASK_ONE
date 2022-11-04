@@ -2,7 +2,7 @@ import React from "react";
 import classes from './Container.module.css';
 import Profile from "./Profile";
 import Link from "./Link";
-import Social from "./Social";
+// import Social from "./Social";
 // import share from '../../Assets/shareLogo.svg';
 
 
@@ -12,7 +12,7 @@ const Container = () => {
       <div className={classes.container}>
         <Profile />
         <Link />
-        <Social />
+        {/* <Social /> */}
       </div>
     </div>
   )

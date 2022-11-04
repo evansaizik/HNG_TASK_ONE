@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 0px;
+  padding: 64px 0px 32px;
   gap: 24px;
-  height: 924px;
+  height: 960px;
   left: 0px;
   top: 0px;
   margin: auto;
@@ -17,7 +17,7 @@
   padding: 0px;
   gap: 32px;
   width: 91.4%;
-  height: 700px;
+  height: 848px;
 }
 
 @media screen and (min-width: 768px){

@@ -2,6 +2,7 @@ import React from "react";
 import classes from './Link.module.css';
 import Button from "../Button";
 import { button as BUTTON } from "../Button";
+import Social from './Social'
 
 const Links = () => {
   return (
@@ -13,6 +14,7 @@ const Links = () => {
       <Button id='pitch' href="https://background.zuri.team">Background Check for Coders</Button>
       <Button id='book__design' href="https://books.zuri.team/design-rules">Design Books</Button>
       <BUTTON id='contact' to='/contact'>Contact Me</BUTTON>
+      <Social />
     </div>
   )
 }
