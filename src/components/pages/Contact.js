@@ -1,12 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useReducer } from "react";
 import classes from './Contact.module.css';
+
+const messageReducer = (state, action) => {
+  if (action.type === 'USER_MESSAGE') {
+    return { value: action.val, isValid: action.val.length > 0 }
+  }
+  if (action.type === 'USER_BLUR') {
+    return { value: state.value, isValid: state.length > 0 };
+  }
+  return { value: '', isValid: false }
+};
+
+const emailReducer = (state, action) => {
+  if (action.type === 'USER_EMAIL') {
+    return {value: action.val, isValid: action.val.includes('@')};
+  }
+  if (action.type === 'USER_BLUR') {
+    return {value: state.value, isValid: state.value.includes('@')};
+  }
+
+  return {value: '', isValid: false};
+}
 
 const Contact = () => {
   const [fName, setFName] = useState('');
   const [lName, setLName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
 
+  const [messageState, dispatchMessage] = useReducer(messageReducer, {
+    value: '', 
+    isValid: true,
+  });
+
+  const [emailState, dispatchEmail] = useReducer(emailReducer, {
+    value: '',
+    isValid: true,
+  })
   
   const fNameHandler = (event) => {
     setFName(event.target.value)
@@ -17,24 +45,29 @@ const Contact = () => {
   }
 
   const emailHandler = (event) => {
-    setEmail(event.target.value)
+    dispatchEmail({type: 'USER_EMAIL', val: event.target.value })
+  }
+
+  const validateEmailHandler = () => {
+    dispatchEmail({type: 'USER_BLUR'})
   }
 
   const messageHandler = (event) => {
-    setMessage(event.target.value);
+    dispatchMessage({
+      type: 'USER_MESSAGE',
+      val: event.target.value
+    })
   }
+
+  const validateMessageHandler = () => {
+    dispatchMessage({type: 'USER_BLUR'})
+  }
+
   const submitHandler = (event) => {
     event.preventDefault();
-
-    if(fName === '' || lName === '' || email === '') {
+    if(fName === '' || lName === '' || emailState === '') {
       return;
     }
-
-    // console.log(fName, lName, email, message)
-    setFName('');
-    setLName('');
-    setEmail('');
-    setMessage('');
   }
 
   return <div className={classes.layout}>
@@ -55,11 +88,13 @@ const Contact = () => {
       </div>
       <div className={classes.email}>
         <label htmlFor="email">Email</label>
-        <input type='email' placeholder="yourname@email.com" id="email" value={email} onChange={emailHandler}/>
+        <input type='email' className={!emailState.isValid ? classes.invalid : ''} placeholder="yourname@email.com" id="email" value={emailState.value} onChange={emailHandler} onBlur={validateEmailHandler}/>
+        {!emailState.isValid && <span className={classes.span}>your email should include '@'</span>}
       </div>
       <div className={classes.text}>
         <label htmlFor="message">Message</label>
-        <textarea placeholder="Send me a message and I'll reply you as soon as possible." id="message" value={message} onChange={messageHandler}/>
+        <textarea className={ !messageState.isValid ?classes.invalid : ''} placeholder="Send me a message and I'll reply you as soon as possible." id="message" value={messageState.value} onBlur={validateMessageHandler} onChange={messageHandler} />
+        {!messageState.isValid && <span className={classes.span}>Please enter a message</span>}
       </div>
       <div className={classes.check}>
         <input id="checkbox" type="checkbox"/>
