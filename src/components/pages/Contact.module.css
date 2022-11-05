@@ -125,6 +125,18 @@ form div textarea {
   font-family: sans-serif;
 }
 
+.span {
+  font-size: 1.3rem;
+  display: block;
+  margin-top: .5rem;
+  color: rgba(255, 0, 0, 0.85);
+}
+
+.invalid{
+  border: 2px solid rgba(225, 0, 0, 0.307);
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.52);
+}
+
 form .check {
   display: flex;
   flex-direction: row;
@@ -173,6 +185,8 @@ button {
   border-radius: 8px;
   color: #FFFFFF;
 }
+
+
 
 @media screen and (min-width: 768px) {
   .header {
