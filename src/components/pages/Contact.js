@@ -11,16 +11,16 @@ const Contact = () => {
       <div className={classes.name}>
         <div className={classes.row}>
           <label htmlFor="first_name">First name</label>
-          <input placeholder="Enter your first name" id="first_name"/>
+          <input type='text' placeholder="Enter your first name" id="first_name"/>
         </div>
         <div className={classes.row}>
           <label htmlFor="last_name">Last name</label>
-          <input placeholder="Enter your last name" id="last_name"/>
+          <input type='text' placeholder="Enter your last name" id="last_name"/>
         </div>
       </div>
       <div className={classes.email}>
         <label htmlFor="email">Email</label>
-        <input placeholder="yourname@email.com" id="email"/>
+        <input type='email' placeholder="yourname@email.com" id="email"/>
       </div>
       <div className={classes.text}>
         <label htmlFor="message">Message</label>

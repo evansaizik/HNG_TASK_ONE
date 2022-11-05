@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8b7f04f.css",
-    "main.js": "/static/js/main.f12bf910.js",
+    "main.css": "/static/css/main.7a773d38.css",
+    "main.js": "/static/js/main.51435855.js",
     "static/js/787.98498dfe.chunk.js": "/static/js/787.98498dfe.chunk.js",
     "static/media/I4G.svg": "/static/media/I4G.601ff0479d970c740e8b7d7ba7821548.svg",
     "static/media/Footer text.svg": "/static/media/Footer text.ffc0a9517dad8c88130c88c30529d148.svg",
@@ -10,12 +10,12 @@
     "static/media/shareLogo.svg": "/static/media/shareLogo.ef0667842321f70b92ece6b332a6dc6f.svg",
     "static/media/shareLogo1.svg": "/static/media/shareLogo1.8b4369de8ab30a8ae240d027dafeccf0.svg",
     "index.html": "/index.html",
-    "main.b8b7f04f.css.map": "/static/css/main.b8b7f04f.css.map",
-    "main.f12bf910.js.map": "/static/js/main.f12bf910.js.map",
+    "main.7a773d38.css.map": "/static/css/main.7a773d38.css.map",
+    "main.51435855.js.map": "/static/js/main.51435855.js.map",
     "787.98498dfe.chunk.js.map": "/static/js/787.98498dfe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8b7f04f.css",
-    "static/js/main.f12bf910.js"
+    "static/css/main.7a773d38.css",
+    "static/js/main.51435855.js"
   ]
 }
