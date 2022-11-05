@@ -6,7 +6,7 @@ const messageReducer = (state, action) => {
     return { value: action.val, isValid: action.val.length > 0 }
   }
   if (action.type === 'USER_BLUR') {
-    return { value: state.value, isValid: state.length > 0 };
+    return { value: state.value, isValid: state.value.length > 0 };
   }
   return { value: '', isValid: false }
 };
