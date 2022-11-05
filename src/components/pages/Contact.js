@@ -68,6 +68,10 @@ const Contact = () => {
     if(fName === '' || lName === '' || emailState === '') {
       return;
     }
+    setFName('');
+    setLName('');
+    emailState.value = '';
+    messageState.value = '';
   }
 
   return <div className={classes.layout}>
